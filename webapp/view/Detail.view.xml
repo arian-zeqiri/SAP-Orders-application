@@ -1,0 +1,53 @@
+<mvc:View controllerName="edu.ap.be.zsd042materiallist2.controller.Detail" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.uxap" xmlns:l="sap.ui.layout" xmlns:m="sap.m" height="100%">
+    <ObjectPageLayout id="ObjectPageLayout" preserveHeaderStateOnScroll="true" upperCaseAnchorBar="false">
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <heading>
+                    <m:Title text="{CompanyName}" />
+                </heading>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+
+        <headerContent>
+            <m:FlexBox wrap="Wrap" fitContainer="true">
+                <l:VerticalLayout class="sapUiSmallMarginEnd">
+                    <m:ObjectStatus title="Price" text="{NetValue} {Currency}" />
+                    <m:ObjectStatus title="Co Area" text="{ControllingArea}" />
+                    <m:ObjectStatus title="Overal status" text="{OvStatus}" />
+                </l:VerticalLayout>
+            </m:FlexBox>
+
+        </headerContent>
+
+        <sections>
+            <ObjectPageSection titleUppercase="false" title="Customer Information">
+                <subSections>
+                    <ObjectPageSubSection titleUppercase="false">
+                        <blocks>
+                            <m:ObjectStatus title="Adress" text="{Adress}" />
+                            <m:ObjectStatus title="Company Name" text="{CompanyName}" />
+                            <m:ObjectStatus title="City" text="{City}" />
+                            <m:ObjectStatus title="" text="" />
+
+                            <m:ObjectStatus title="Country" text="{Country}" />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+
+            <ObjectPageSection titleUppercase="false" title="Order Information">
+                <subSections>
+                    <ObjectPageSubSection titleUppercase="false">
+                        <blocks>
+                            <m:ObjectStatus title="Material goup" text="{MatGroup}" />
+                            <m:ObjectStatus title="GrossWeight" text="{GrossWeight} {WeightUnit} " />
+                            <m:ObjectStatus title="Unit" text="{BaseOfMeasure}" />
+                            <m:ObjectStatus title="NettoWeight" text="{NettoWeight} {WeightUnit}" />
+                            <m:ObjectStatus title="ItemCategory" text="{Country}" />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+    </ObjectPageLayout>
+</mvc:View>

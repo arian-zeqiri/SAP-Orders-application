@@ -1,0 +1,49 @@
+<mvc:View controllerName="edu.ap.be.zsd042materiallist2.controller.CreateOrder" xmlns="sap.m" xmlns:semantic="sap.f.semantic" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <semantic:SemanticPage id="CreateOrderPage" busy="{CreateOrderView>/busy}" busyIndicatorDelay="{CreateOrderView>/delay}" showFooter="true">
+        <semantic:titleHeading>
+            <Title id="_IDGenTitle1" text="New Order" type="H2" />
+        </semantic:titleHeading>
+        <semantic:headerContent />
+
+        <semantic:content>
+            <f:SimpleForm
+                id="SimpleFormDisplay354"
+                editable="false"
+                layout="ResponsiveGridLayout"
+                title="Details"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="4"
+                emptySpanL="4"
+                emptySpanM="4"
+                emptySpanS="0"
+                columnsXL="1"
+                columnsL="1"
+                columnsM="1"
+                singleContainerFullSize="false"
+            >
+                <f:content>
+
+                    <Label id="DocumentNR" text="Document number" />
+                    <Input id="Document number" value="" maxLength="40" />
+
+                    <Label id="SalesOrg" text="Sales org" />
+                    <Input id="ex. NA00" value="" maxLength="40" />
+
+                    <Label id="Division" text="Division" />
+                    <Input id="ex. BI" value="" maxLength="40" />
+
+                    <Label id="SoldToParty" text="Sold To" />
+                    <Input id="ex. 5031" value="" maxLength="40" />
+
+                    <Label id="CustomerRef" text="Customer reference" />
+                    <Input id="ex. BOR-12" value="" maxLength="40" />
+
+                </f:content>
+            </f:SimpleForm>
+        </semantic:content>
+    </semantic:SemanticPage>
+</mvc:View>
